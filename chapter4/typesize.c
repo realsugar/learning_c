@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdbool.h>
+#include <stddef.h>
 
 #define print_type_size(type)   printf("sizeof(" #type ") = %lu\n", sizeof(type))
 
@@ -33,5 +34,7 @@ int main() {
     print_type_size(double*);
     print_type_size(bool);
     print_type_size(bool*);
+    print_type_size(ptrdiff_t);
+    print_type_size(size_t);
     return 0;
 }
